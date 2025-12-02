@@ -17,13 +17,21 @@ h1 {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column; 
+  align-items: center;    
   margin-bottom: 20px;
 }
 
 img {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+main button {
+  margin-top: 20px;     
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 footer {
