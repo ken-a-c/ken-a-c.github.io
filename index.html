@@ -10,6 +10,8 @@
   <header>
     <h1>Outdoor Activities Guide</h1>
     <p>Throughout my childhood I always wanted to explore. Whether it was exploring the neighborhoods or going up to the mountains with my family, I dedicate this website to giving others the best destinations for hiking and camping.</p>
+
+    <p id="typing-text"></p>
   </header>
 
   <main>
@@ -25,6 +27,24 @@
   </footer>
 
   <script>
+
+    function typeEffect(element, text, speed = 50) {
+      let i = 0;
+      const timer = setInterval(() => {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+        } else {
+          clearInterval(timer);
+        }
+      }, speed);
+    }
+
+    window.onload = function() {
+      const element = document.getElementById('typing-text');
+      typeEffect(element, "Welcome to my awesome website!");
+    };
+
     function changeBackgroundColor() {
       const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
       document.body.style.backgroundColor = randomColor;
