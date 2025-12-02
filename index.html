@@ -11,7 +11,10 @@
     <h1>Outdoor Activities Guide</h1>
     <p>Throughout my childhood I would always want to explore. If that was exploring the neighborhoods or going up to the mountains with my family. That's why I dedicate this website to giving others the best destinations for hiking and camping.</p>
   </header>
+
+
   <button onclick="changeBackgroundColor()">Change Background Color</button>
+
   <main>
     <img src="mountain.jpg" alt="Mountain view" width="400">
   </main>
@@ -21,15 +24,15 @@
       <a href="https://github.com/kvvvvvxxcx">GitHub</a> | 
       <a href="https://www.linkedin.com/in/kenny-thir-t-k314b0b6/">LinkedIn</a>
     </p>
+
     <button onclick="changeBackgroundColor()">Change Background Color</button>
   </footer>
+
   <script>
-  function changeBackgroundColor() {
-    // Generate a random color
-    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-    // Apply it to the body background
-    document.body.style.backgroundColor = randomColor;
-  }
+    function changeBackgroundColor() {
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+      document.body.style.backgroundColor = randomColor;
+    }
   </script>
 </body>
 </html>
