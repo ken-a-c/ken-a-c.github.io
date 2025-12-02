@@ -23,5 +23,13 @@
     </p>
     <button onclick="changeBackgroundColor()">Change Background Color</button>
   </footer>
+  <script>
+  function changeBackgroundColor() {
+    // Generate a random color
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    // Apply it to the body background
+    document.body.style.backgroundColor = randomColor;
+  }
+  </script>
 </body>
 </html>
